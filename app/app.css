@@ -1,0 +1,39 @@
+/* app css stylesheet */
+
+.myHeader{
+  width:100%;
+  background-color:#9e9e9e;
+}
+
+.items{
+  background-color:#0b97c4;
+  overflow:auto;
+  float:left;
+  width:70%
+}
+
+.item{
+  margin: 1px 2px 1px 2px;
+  background-color:#b3d4fc;
+}
+
+.right{
+  overflow:auto;
+}
+
+.products{
+  background-color: #00A000;
+}
+
+.contact{
+  margin: 1px 2px 1px 2px;
+  background-color: #66CC44;
+}
+
+.addProduct{
+  background-color: #8a4182;
+}
+
+.back{
+  background-color: #BB6622;
+}

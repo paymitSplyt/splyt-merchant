@@ -1,0 +1,21 @@
+<div class="myHeader">
+    <h1>{{cart.merchantName}}, on {{cart.date|date:"medium"}}, Total: {{cart.totalPrice}}</h1>
+</div>
+
+<div class="back" ng-click="goBack()">Back</div>
+
+<div class="items">Items:
+    <div class="item" ng-repeat="item in cart.items" ng-click="subtractItemFromCart(item)">
+        <span>{{item.description}}</span>
+        <span>{{item.amount}}</span>
+        <span>{{item.price}}</span>
+    </div>
+</div>
+
+<div class="right">
+    <div class="products">Products:
+        <div class="product" ng-repeat="product in products" ng-click="addItemToCart(product)">
+            {{product.description}}&nbsp;{{product.price}}
+        </div>
+    </div>
+</div>

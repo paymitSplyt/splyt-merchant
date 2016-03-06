@@ -1,0 +1,27 @@
+{
+  "products":
+  [
+    { "description": "Lager Beer", "price": 5.50, "picture":"pictures/pic1.jpg"},
+    { "description": "Pale Ale", "price": 5.50, "picture":"pictures/pic1.jpg"},
+    { "description": "India Pale Ale", "price": 5.50, "picture":"pictures/pic1.jpg"},
+    { "description": "Guiness", "price": 5.50, "picture":"pictures/pic1.jpg"},
+    { "description": "Monthly Special Beer", "price": 6.00, "picture":"pictures/pic1.jpg"},
+    { "description": "Honey Spice IPA", "price": 6.50, "picture":"pictures/pic1.jpg"},
+    { "description": "Pizza Prociutto", "price": 19, "picture":"pictures/pic1.jpg"},
+    { "description": "Pizza Pollo", "price": 19, "picture":"pictures/pic1.jpg"},
+    { "description": "Pizza Funghi", "price": 19, "picture":"pictures/pic1.jpg"},
+    { "description": "Pizza Hawaii", "price": 19, "picture":"pictures/pic1.jpg"},
+    { "description": "Lasagne", "price": 22, "picture":"pictures/pic1.jpg"},
+    { "description": "Swiss Fondue", "price": 25, "picture":"pictures/pic1.jpg"},
+    { "description": "Swiss Raclette", "price": 27, "picture":"pictures/pic1.jpg"},
+    { "description": "Fish and Chips", "price": 14, "picture":"pictures/pic1.jpg"},
+    { "description": "French Fries", "price": 12, "picture":"pictures/pic1.jpg"},
+    { "description": "Beef Burger with Fries", "price": 23, "picture":"pictures/pic1.jpg"},
+    { "description": "Chicken Cheese Burger", "price": 20, "picture":"pictures/pic1.jpg"},
+    { "description": "Chicken Curry", "price": 22, "picture":"pictures/pic1.jpg"},
+    { "description": "Masala Curry", "price": 22, "picture":"pictures/pic1.jpg"},
+    { "description": "Espresso", "price": 3.50, "picture":"pictures/pic1.jpg"},
+    { "description": "Café Latte", "price": 4.50, "picture":"pictures/pic1.jpg"},
+    { "description": "Glacé", "price": 9.50, "picture":"pictures/pic1.jpg"}
+  ]
+}
