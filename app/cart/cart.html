@@ -1,23 +1,26 @@
 <div class="top">
-    <div class="merchantName">{{cart.merchantName}}, on {{cart.date|date:"medium"}}, Total: {{cart.totalPrice}}</div>
+    <div class="merchantName">{{cart.merchantName}}, on {{cart.date | date:"medium"}}, Total: {{cart.totalPrice}}</div>
 </div>
 
 <div class="back" ng-click="goBack()">Back</div>
 
 <div class="main">
     <div class="left">Items:
-        <div class="item" ng-repeat="item in cart.items" ng-click="subtractItemFromCart(item)">
+        <div class="item" ng-repeat="item in cart.items" ng-class="{'itemDisabled' : item.paidAmount >= item.amount}">
             <div class="itemListItemName">{{item.description}}</div>
-            <div class="productListItem">{{item.amount}}</div>
-            <div class="productListItem">{{item.price}}</div>
+
+            <div class="pay" ng-click="payItem(item)">$</div>
+            <div class="pay" ng-click="subtractItemFromCart(item)">X</div>
+            <div class="productListNumberItem">{{item.paidAmount}}/{{item.amount}}</div>
+            <div class="productListNumberItem">{{item.price | currency}}</div>
         </div>
         <div class="clearFloat"></div>
     </div>
     <div class="right">
         <div class="contacts">Products:
             <div class="product" ng-repeat="product in products" ng-click="addItemToCart(product)">
-                <div class="itemListItem">{{product.description}}</div>
-                <div class="productListItem">{{product.price}}</div>
+                <div class="itemListItemName">{{product.description}}</div>
+                <div class="productListNumberItem">{{product.price | currency}}</div>
             </div>
         </div>
     </div>

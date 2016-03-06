@@ -42,6 +42,13 @@ angular.module('myApp')
                 });
         };
 
+        $scope.payItem = function (item) {
+            if (item.paidAmount < item.amount)
+                cartService.payItem(item.id).then(function () {
+                    $route.reload();
+                })
+        };
+
         $scope.getCartIndex = function (product) {
             for (var i = 0; i < $scope.cart.length; i++) {
                 if ($scope.cart[i] === product)

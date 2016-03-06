@@ -72,7 +72,7 @@ body{
 }
 
 .right{
-  width:40%;
+  width:35%;
   float:right;
   overflow:auto;
 }
@@ -90,19 +90,29 @@ body{
   clear:right;
 }
 
-.pay, .addContact, .back{
+.pay {
   background-color: #AEE5E5;
-  font-size:30px;
-  width:80px;
-  height:40px;
+  width:20px;
+  height:20px;
   color:#5f9ea0;
-  border-radius: 20px;
+  border-radius: 5px;
+  text-align:center;
+  vertical-align: middle;
+  font-weight:bold;
+  float:right;
+  margin: 5px;
+}
+
+.back{
+  background-color: #AEE5E5;
+  width:50px;
+  height:20px;
+  color:#5f9ea0;
+  border-radius: 5px;
   text-align:center;
   font-weight:bold;
-  line-height:40px;
   float:right;
-  margin-right:10px;
-  margin-top:10px;
+  margin: 10px;
 }
 
 .pay:hover, .back:hover, .addContact:hover, .product:hover, .contactBook:hover{
@@ -114,13 +124,15 @@ body{
 }
 
 .itemListItem {
-  width:80%;
+  width:120px;
   float:left;
 }
 
 .itemListItemName {
-  width:60%;
+  width:120px;
   float:left;
+  overflow: hidden;
+  height: inherit;
 }
 
 
@@ -154,9 +166,11 @@ body{
   float:left;
 }
 
-.productListItem {
-  width:20%;
-  float:left;
+.productListNumberItem {
+  width:12px;
+  float:right;
+  margin-right: 25px;
+  margin-left: 15px;
   text-align:right;
 }
 
@@ -222,4 +236,14 @@ button{
 .activePaySelection{
   background-color:#ffffff;
   color:#518687;
+}
+
+
+.itemDisabled{
+  background-color:#558E8E;
+  color:#69AEAF;
+}
+
+.itemDisabled:hover{
+  background-color:#558E8E;
 }

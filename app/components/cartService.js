@@ -26,6 +26,9 @@ angular
                 return $http.post(url + "Cart/" + cartId + "/Item",
                     data.post(product.description, product.price, 1));
             },
+            payItem: function (itemId) {
+                return $http.post(url + "Cart/Item/" + itemId + "/pay", {});
+            },
             subtractItemFromCart: function (item) {
                 var data = {
                     post: function (description, price, amount) {
