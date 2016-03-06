@@ -1,13 +1,16 @@
-<div class="myHeader">
-    <h1>Splyt Merchant</h1>
+<div class="top">
+    <div class="merchantName">Splyt Merchant: Carts</div>
 </div>
 
-<div class="newCart" ng-click="createNewCart()">New Card</div>
+<div class="back" ng-click="createNewCart()">New Card</div>
 
-<div class="carts">Carts:
-    <div class="cart" ng-repeat="cart in carts" ng-click="goToCart(cart.id)">
-        <span>{{cart.merchantName}}</span>
-        <span>{{cart.date|date:"medium"}}</span>
-        <span>Total: {{cart.totalPrice}}</span>
+<div class="main">
+    <div class="allover">
+        Carts:
+        <div class="item" ng-repeat="cart in carts" ng-click="goToCart(cart.id)">
+            <div class="fullDescription">{{cart.merchantName}}</div>
+            <div class="fullDate">{{cart.date|date:"medium"}}</div>
+            <div class="fullAmount">Total: {{cart.totalPrice}}</div>
+        </div>
     </div>
 </div>

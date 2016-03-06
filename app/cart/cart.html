@@ -1,21 +1,24 @@
-<div class="myHeader">
-    <h1>{{cart.merchantName}}, on {{cart.date|date:"medium"}}, Total: {{cart.totalPrice}}</h1>
+<div class="top">
+    <div class="merchantName">{{cart.merchantName}}, on {{cart.date|date:"medium"}}, Total: {{cart.totalPrice}}</div>
 </div>
 
 <div class="back" ng-click="goBack()">Back</div>
 
-<div class="items">Items:
-    <div class="item" ng-repeat="item in cart.items" ng-click="subtractItemFromCart(item)">
-        <span>{{item.description}}</span>
-        <span>{{item.amount}}</span>
-        <span>{{item.price}}</span>
+<div class="main">
+    <div class="left">Items:
+        <div class="item" ng-repeat="item in cart.items" ng-click="subtractItemFromCart(item)">
+            <div class="itemListItemName">{{item.description}}</div>
+            <div class="productListItem">{{item.amount}}</div>
+            <div class="productListItem">{{item.price}}</div>
+        </div>
+        <div class="clearFloat"></div>
     </div>
-</div>
-
-<div class="right">
-    <div class="products">Products:
-        <div class="product" ng-repeat="product in products" ng-click="addItemToCart(product)">
-            {{product.description}}&nbsp;{{product.price}}
+    <div class="right">
+        <div class="contacts">Products:
+            <div class="product" ng-repeat="product in products" ng-click="addItemToCart(product)">
+                <div class="itemListItem">{{product.description}}</div>
+                <div class="productListItem">{{product.price}}</div>
+            </div>
         </div>
     </div>
 </div>

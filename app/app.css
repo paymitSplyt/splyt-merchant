@@ -1,39 +1,225 @@
 /* app css stylesheet */
 
-.myHeader{
-  width:100%;
-  background-color:#9e9e9e;
+body{
+  background-color:#5f9ea0;
+  color:white;
+  height:900px;
+  width:500px;
 }
 
-.items{
-  background-color:#0b97c4;
-  overflow:auto;
+.main{
+  padding-top:10px;
+}
+
+.top{
+  background-color:#ffffff;
+  color:#518687;
+  padding: 10px 10px 0px 10px;
+  height:90px;
+
+}
+
+.bottom{
+  background-color:#71BCBC;
+  padding: 10px 10px 0px 10px;
+  height:90px;
+}
+
+.merchantName{
+  font-size:30px;
+  font-weight:bold;
+}
+
+.date{
+  font-size:20px;
   float:left;
-  width:70%
+}
+
+.total{
+  font-size:20px;
+  text-align:center;
+}
+
+.allover{
+  overflow:auto;
+  overflow-x: hidden;
+  float:left;
+  width:100%;
+  height:680px;
+}
+
+.left{
+  overflow:auto;
+  overflow-x: hidden;
+  float:left;
+  width:60%;
+  height:680px;
 }
 
 .item{
-  margin: 1px 2px 1px 2px;
-  background-color:#b3d4fc;
+  padding-left:10px;
+  height:30px;
+  line-height:30px;
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+  border-radius: 15px;
+  margin-bottom:2px;
+  background-color:#68ACAD;
+}
+
+.item:hover{
+  background-color:#77C4C4;
 }
 
 .right{
+  width:40%;
+  float:right;
   overflow:auto;
 }
 
-.products{
-  background-color: #00A000;
+.product {
+  background-color: #AEE5E5;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom:1px;
+  color:#5f9ea0;
+  display:inline-block;
+  float:right;
+  padding:0 5px 0 5px;
+  clear:right;
 }
 
-.contact{
-  margin: 1px 2px 1px 2px;
-  background-color: #66CC44;
+.pay, .addContact, .back{
+  background-color: #AEE5E5;
+  font-size:30px;
+  width:80px;
+  height:40px;
+  color:#5f9ea0;
+  border-radius: 20px;
+  text-align:center;
+  font-weight:bold;
+  line-height:40px;
+  float:right;
+  margin-right:10px;
+  margin-top:10px;
 }
 
-.addProduct{
-  background-color: #8a4182;
+.pay:hover, .back:hover, .addContact:hover, .product:hover, .contactBook:hover{
+  background-color: #FFFFFF;
 }
 
-.back{
-  background-color: #BB6622;
+.activeContact{
+  background-color:#FFFFFF;
+}
+
+.itemListItem {
+  width:80%;
+  float:left;
+}
+
+.itemListItemName {
+  width:60%;
+  float:left;
+}
+
+
+.fullDate {
+  width:50%;
+  float:left;
+}
+
+.fullAmount {
+  width:20%;
+  float:left;
+}
+
+.fullDescription {
+  width:30%;
+  float:left;
+  text-align:left;
+}
+
+.clearFloat{
+  clear: both;
+}
+
+.contactPrename{
+  width:30%;
+  float:left;
+}
+
+.contactName{
+  width:30%;
+  float:left;
+}
+
+.productListItem {
+  width:20%;
+  float:left;
+  text-align:right;
+}
+
+.contactBookPrename{
+  width:25%;
+  float:left;
+  margin-left:10px;
+}
+
+.contactBookName{
+  width:25%;
+  float:left;
+}
+
+.contactBookNumber{
+  float:left;
+  text-align:right;
+}
+
+.contactBook{
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #cccccc;
+  height:30px;
+  color:#444444;
+  font-size:15px;
+  line-height:30px;
+}
+
+.contactBook:hover{
+  background-color:#eaeaea;
+}
+
+.paySelection{
+  text-align:center;
+}
+
+input{
+  color:#518687;
+}
+
+button{
+  color:#444444;
+}
+
+.payBubble{
+  float:left;
+  height:100px;
+  width:100px;
+  text-align:center;
+  border-radius:50px;
+  line-height:100px;
+  font-size:20px;
+  font-weight:bold;
+  color:#ffffff;
+  margin:12px;
+  background-color:#518687;
+}
+
+.payBubble:hover{
+  background-color:#77C4C4;
+}
+
+.activePaySelection{
+  background-color:#ffffff;
+  color:#518687;
 }
