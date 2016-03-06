@@ -4,7 +4,7 @@
     { "description": "Lager Beer", "price": 5.50, "picture":"pictures/pic1.jpg"},
     { "description": "Pale Ale", "price": 5.50, "picture":"pictures/pic1.jpg"},
     { "description": "India Pale Ale", "price": 5.50, "picture":"pictures/pic1.jpg"},
-    { "description": "Guiness", "price": 5.50, "picture":"pictures/pic1.jpg"},
+    { "description": "Guinness", "price": 5.50, "picture":"pictures/pic1.jpg"},
     { "description": "Monthly Special Beer", "price": 6.00, "picture":"pictures/pic1.jpg"},
     { "description": "Honey Spice IPA", "price": 6.50, "picture":"pictures/pic1.jpg"},
     { "description": "Pizza Prociutto", "price": 19, "picture":"pictures/pic1.jpg"},
